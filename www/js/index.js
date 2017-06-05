@@ -37,7 +37,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        hockeyapp.start(null, null, "07bd9e0df1ea486fac16c3e932038a8d");
+        hockeyapp.start(null, null, "2ba4e2bbe0044da48524316c05cb28d0");
 
 
         document.querySelector('#testdialog').addEventListener("touchend", function(){
@@ -56,6 +56,7 @@ var app = {
         });
 
         document.querySelector('#checkforupdates').addEventListener("touchend", function(){
+          debugger;
           console.log('checkforupdates');
           hockeyapp.checkForUpdate();
         });
