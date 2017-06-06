@@ -38,6 +38,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         hockeyapp.start(null, null, "2ba4e2bbe0044da48524316c05cb28d0");
+        console.log('check for updates when started app');
         hockeyapp.checkForUpdate();
 
         document.querySelector('#testdialog').addEventListener("touchend", function(){
