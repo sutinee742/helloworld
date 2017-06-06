@@ -39,7 +39,7 @@ var app = {
         app.receivedEvent('deviceready');
         hockeyapp.start(null, null, "7256823212ae4d1f92f13b8f5b5196fe");
         console.log('check for updates when started app');
-        // hockeyapp.checkForUpdate();
+        hockeyapp.checkForUpdate();
 
         document.querySelector('#testdialog').addEventListener("touchend", function(){
           console.log('testdialog');
@@ -57,7 +57,7 @@ var app = {
         });
 
         document.querySelector('#checkforupdates').addEventListener("touchend", function(){
-          debugger;
+          // debugger;
           console.log('checkforupdates');
           hockeyapp.checkForUpdate();
         });
