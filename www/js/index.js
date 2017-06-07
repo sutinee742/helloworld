@@ -37,7 +37,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        hockeyapp.start(null, null, "7256823212ae4d1f92f13b8f5b5196fe");
+        hockeyapp.start(null, null, "c9d0038640d04b7598f3ed43f4e4422b");
         console.log('check for updates when started app');
         hockeyapp.checkForUpdate();
 
